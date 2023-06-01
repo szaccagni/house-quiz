@@ -8,7 +8,7 @@ export default function App() {
   const [showResult, setShowResult] = useState(false)
 
   function resetQuiz() {
-    setShowQuiz(true)
+    setShowQuiz(false)
     setShowResult(false)
   }
 

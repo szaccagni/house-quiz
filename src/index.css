@@ -64,10 +64,11 @@ code {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  grid-column: 1 / span 3;
 }
 
 .next-btn-container button {
-  width: 30%;
+  width: 17%;
   background-color: darkgreen;
 }
 
@@ -95,7 +96,7 @@ code {
   height: 80%;
   display: grid;
   grid-template-columns: 33% 33% 33%;
-  grid-template-rows: 50% 50%;
+  grid-template-rows: 45% 45% 10%;
   grid-gap: 10px; 
   padding-top: 15px;
   padding: 45px;

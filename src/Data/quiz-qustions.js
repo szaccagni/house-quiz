@@ -1,6 +1,6 @@
 const QUESTIONS = [
     {
-        question : 'pick your dream location',
+        question : 'pick a location',
         response : [
             {
                 img : 'https://www.travelandleisure.com/thmb/91pb8LbDAUwUN_11wATYjx5oF8Q=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/new-york-city-evening-NYCTG0221-52492d6ccab44f328a1c89f41ac02aea.jpg',
@@ -21,6 +21,11 @@ const QUESTIONS = [
                 img : 'https://media.cntraveler.com/photos/60341fbad7bd3b27823c9db2/16:9/w_2560%2Cc_limit/Tokyo-2021-GettyImages-1208124099.jpg',
                 title : 'Tokyo',
                 genres: ['Action', 'Fantasy']
+            },
+            {
+                img : 'https://media.timeout.com/images/105211673/image.jpg',
+                title : 'Rome',
+                genres: ['History', 'Documentary']
             },
             {
                 img : 'https://media.timeout.com/images/105211673/image.jpg',
@@ -116,3 +121,30 @@ module.exports = {
 function getData() {
     return QUESTIONS
 }
+
+const MOVIE_DB_KEY = '4d84b4bbf6cccea4ffd1544bc87220a1'
+
+// https://api.themoviedb.org/3/discover/movie?api_key=4d84b4bbf6cccea4ffd1544bc87220a1&with_genres=37
+
+const GENRES = 
+    [
+        {"id":28,"name":"Action"},
+        {"id":12,"name":"Adventure"},
+        {"id":16,"name":"Animation"},
+        {"id":35,"name":"Comedy"},
+        {"id":80,"name":"Crime"},
+        {"id":99,"name":"Documentary"},
+        {"id":18,"name":"Drama"},
+        {"id":10751,"name":"Family"},
+        {"id":14,"name":"Fantasy"},
+        {"id":36,"name":"History"},
+        {"id":27,"name":"Horror"},
+        {"id":10402,"name":"Music"},
+        {"id":9648,"name":"Mystery"},
+        {"id":10749,"name":"Romance"},
+        {"id":878,"name":"Science Fiction"},
+        {"id":10770,"name":"TV Movie"},
+        {"id":53,"name":"Thriller"},
+        {"id":10752,"name":"War"},
+        {"id":37,"name":"Western"}
+    ]
