@@ -1,69 +1,24 @@
-import React, { useState, useEffect } from 'react';
 import './MovieRecommendations.css';
 
-const MovieRecommendations = (props) => {
-  const [movies, setMovies] = useState([]);
-
-  useEffect(() => {
-
-    const fetchedMovies = [
-      {
-        title: 'Movie 1',
-        imdbRating: 7.5,
-        link: 'https://www.imdb.com/movie1',
-        thumbnail: '/logo192.png',
-        genres: ['Action', 'Adventure'],
-      },
-      {
-        title: 'Movie 2',
-        imdbRating: 8.2,
-        link: 'https://www.imdb.com/movie2',
-        thumbnail: 'https://example.com/thumbnail2.jpg',
-        genres: ['Drama', 'Romance'],
-      },
-    ];
-
-    setMovies(fetchedMovies);
-  }, []);
+export default function MovieRecommendations({movie}) {
+  const poster = `https://image.tmdb.org/t/p/w500${movie.poster_path}`
 
   return (
-    <div className="movie-recommendations">
-      {/* <h1 className="title">Movie Recommendations</h1> */}
-      {/* <ul className="movie-list"> */}
-        {/* {movies.map((movie, index) => (
-          <li key={index} className="movie-item">
-            <div className="thumbnail-container">
-              <img src={movie.thumbnail} alt={`Thumbnail for ${movie.title}`} className="thumbnail" />
+    <div className="result-card">
+      <div className="result-img-container">
+        <div className="movie-recommendations">
+          <div className="thumbnail-container">
+          <img src={poster} alt={`Thumbnail for ${movie.original_title}`} className="thumbnail" />
+          </div>
+          <div className="movie-details">
+            <div>
+              <h3 className="movie-title">{movie.original_title}</h3>
+              <p className="imdb-rating">IMDb Rating: {movie.vote_average}</p>
+              <p>Description: {movie.overview}</p>
             </div>
-            <div className="movie-details">
-              <div>
-                <h3 className="movie-title">{movie.title}</h3>
-                <p className="imdb-rating">IMDb Rating: {movie.imdbRating}</p>
-                <p className="genres">Genres: {movie.genres.join(', ')}</p>
-                <a href={movie.link} className="imdb-link" target="_blank" rel="noopener noreferrer">
-                  View on IMDb
-                </a>
-              </div>
-            </div>
-          </li>
-        ))} */}
-      {/* </ul> */}
-      <div className="thumbnail-container">
-      <img src={props.imgPath} alt={`Thumbnail for ${props.title}`} className="thumbnail" />
-      </div>
-      <div className="movie-details">
-        <div>
-          <h3 className="movie-title">{props.title}</h3>
-          <p className="imdb-rating">IMDb Rating: {props.rating}</p>
-          {/* <p className="genres">Genres: {props.genres.join(', ')}</p> */}
-          {/* <a href={props.link} className="imdb-link" target="_blank" rel="noopener noreferrer">
-            View on IMDb
-          </a> */}
-          <p>Description: {props.description}</p>
+          </div>
         </div>
       </div>
     </div>
   );
 };
-
-export default MovieRecommendations;

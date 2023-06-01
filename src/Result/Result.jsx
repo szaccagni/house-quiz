@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import * as questions from '../Data/quiz-qustions'
-import ResultCard from '../ResultCard/ResultCard'
+import MovieRecommendations from "../Movies/MovieRecommendations"
 
 export default function Result({genres}) {
     const [movies, setMovies] = useState([])
@@ -13,14 +13,15 @@ export default function Result({genres}) {
         getIds()
     })
 
-    
+
     return (
         <div>
             <h1 className="result-title">Here are some movies chosen for you!</h1>
             <div className="result-container">
             
             {movies.map((movie, idx) => (
-                <ResultCard key={idx} movie={movie} />
+                // <ResultCard key={idx} movie={movie} />
+                <MovieRecommendations key={idx} movie={movie} />
             ))}
         </div>
         </div>

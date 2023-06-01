@@ -3,7 +3,6 @@ import {useState} from 'react'
 import QuizCard from '../QuizCard/QuizCard'
 import Button from '@mui/material/Button';
 import Result from '../Result/Result';
-import MovieRecommendations from '../Movies/MovieRecommendations';
 
 export default function App() {
   const [showQuiz, setShowQuiz] = useState(false)
