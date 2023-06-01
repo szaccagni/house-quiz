@@ -106,9 +106,23 @@ code {
   padding: 45px;
 }
 
+.result-container {
+  height: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 15px 45px;
+}
+
 .selected {
   border: 5px solid yellow !important;
   border-radius: 5px;
+}
+
+.result-card {
+  width: 33%;
+  padding: 5px;
+  overflow: hidden;
 }
 
 .reponse-card {
@@ -128,7 +142,22 @@ code {
   height: 100%;
 }
 
+.result-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
 .response-img {
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+}
+
+.result-img {
   width: 100%;
   height: 100%;
   object-fit:cover;
