@@ -9,7 +9,6 @@ export default function ResponseCard({option, selected, setSelected}) {
             <div className="img-container">
                 <img alt={option.title} src={option.img} className="response-img"></img>
             </div>
-            <div className="response-title">{option.title}</div>
         </button>
     )
 }
