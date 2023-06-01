@@ -2,10 +2,12 @@ import './App.css';
 import {useState} from 'react'
 import QuizCard from '../QuizCard/QuizCard'
 import Button from '@mui/material/Button';
+import Result from '../Result/Result';
 
 export default function App() {
   const [showQuiz, setShowQuiz] = useState(false)
   const [showResult, setShowResult] = useState(false)
+  const [genres, setGenres] = useState({})
 
   function resetQuiz() {
     setShowQuiz(false)
@@ -24,10 +26,10 @@ export default function App() {
           >Start Quiz!</Button>
         </div>
       }
-      {showQuiz && <QuizCard setShowResult={setShowResult} setShowQuiz={setShowQuiz}/>}
+      {showQuiz && <QuizCard setShowResult={setShowResult} setShowQuiz={setShowQuiz} setGenres={setGenres}/>}
       {showResult &&
         <>
-          <div>result</div>
+          <Result genres={genres}/>
           <button onClick={resetQuiz}>start over</button>
         </>
       }

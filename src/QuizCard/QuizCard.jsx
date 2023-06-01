@@ -3,7 +3,7 @@ import Button from '@mui/material/Button';
 import { useState } from "react"
 import * as questions from '../Data/quiz-qustions'
 
-export default function QuizCard({setShowResult, setShowQuiz}) {
+export default function QuizCard({setShowResult, setShowQuiz, setGenres}) {
     const data = questions.getData()
     const [curQuestion, setCurQuestion] = useState(0)
     const [responses, setResponses] = useState ({})
@@ -36,7 +36,7 @@ export default function QuizCard({setShowResult, setShowQuiz}) {
         }, {});
         const mostFrequentValue = Object.keys(frequencyMap).reduce((a, b) => frequencyMap[a] > frequencyMap[b] ? a : b)
         const genres = questions.getGenres(mostFrequentValue)
-        console.log(genres)
+        setGenres(genres)
     }
 
     return (
