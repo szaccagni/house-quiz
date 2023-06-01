@@ -41,7 +41,7 @@ const QUESTIONS = [
             {
                 img : 'https://cdn.decoist.com/wp-content/uploads/2022/03/Central-courtyard-of-the-house-perseves-existing-tree-without-feeling-out-of-place-66621.jpg',
                 title : 'Brutalist',
-                genres: ['Horror', 'Crime']
+                genres: [{"id":27,"name":"Horror"}, {"id":80,"name":"Crime"}]
             },
         ]
     },
@@ -52,7 +52,7 @@ const QUESTIONS = [
             {
                 img : 'https://www.home-designing.com/wp-content/uploads/2017/02/kitchen-island-industrial-style-adjustable-lamps.jpg',
                 title : 'Industrial',
-                genres: ['Horror', 'Crime']
+                genres: [{"id":27,"name":"Horror"}, {"id":80,"name":"Crime"}]
             },
         ]
     },
@@ -63,7 +63,7 @@ const QUESTIONS = [
             {
                 img : 'https://yardzen.com/wp-content/uploads/9-10-1.png',
                 title : 'Stone',
-                genres: ['Horror', 'Crime']
+                genres: [{"id":27,"name":"Horror"}, {"id":80,"name":"Crime"}]
             },
         ]
     },
@@ -74,7 +74,7 @@ const QUESTIONS = [
             {
                 img : 'https://mcasd.org/client-uploads/images/_mcasd_image_1_62x1_1200px_w/MCASD-LJ-1.jpg',
                 title : 'Modern',
-                genres: ['Horror', 'Crime']
+                genres: [{"id":27,"name":"Horror"}, {"id":80,"name":"Crime"}]
             },
         ]
     },
@@ -85,7 +85,7 @@ const QUESTIONS = [
             {
                 img : 'https://secure.img1-cg.wfcdn.com/im/67583898/resize-h445%5Ecompr-r85/2386/238690965/Iron+Prehung+Front+Entry+Door.jpg',
                 title : 'Modern',
-                genres: ['Horror', 'Crime']
+                genres: [{"id":27,"name":"Horror"}, {"id":80,"name":"Crime"}]
             },
         ]
     },
@@ -96,7 +96,7 @@ const QUESTIONS = [
             {
                 img : 'https://post.bark.co/wp-content/uploads/2022/05/iStock-1223511966.jpg',
                 title : 'Dog',
-                genres: ['Action', 'Fantasy']
+                genres: [{"id":28,"name":"Action"}, {"id":9648,"name":"Mystery"}]
             },
         ]
     },
@@ -107,7 +107,7 @@ const QUESTIONS = [
             {
                 img : 'https://www.finitesolutions.co.uk/wp-content/uploads/2019/03/Basement-Home-Theatre-Project-in-London.jpeg',
                 title : 'Home Theater',
-                genres: ['Action', 'Fantasy']
+                genres: [{"id":28,"name":"Action"}, {"id":9648,"name":"Mystery"}]
             },
         ]
     },
