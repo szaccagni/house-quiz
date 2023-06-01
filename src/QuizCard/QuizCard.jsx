@@ -17,10 +17,11 @@ export default function QuizCard({setShowResult, setShowQuiz}) {
     }
 
     function handleNext() {
-        setSelected('')
         if (curQuestion+1 < data.length) {
             setCurQuestion(curQuestion+1)
+            responses[curQuestion+1] ? setSelected(responses[curQuestion+1]) : setSelected('')
         } else {
+            setSelected('')
             setShowResult(true)
             setShowQuiz(false)
             setCurQuestion(0)
