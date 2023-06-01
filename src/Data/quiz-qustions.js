@@ -145,7 +145,7 @@ function getGenres(letter) {
 
 async function getMovies(genres) {
     const genreIDs = genres.map(genre => genre.id)
-    let endpoint = `https://api.themoviedb.org/3/discover/movie?api_key=${MOVIE_DB_KEY}&include_adult=false&with_genres=${genreIDs[0]}&page=1&sort_by=popularity.desc`
+    let endpoint = `https://api.themoviedb.org/3/discover/movie?api_key=${MOVIE_DB_KEY}&include_adult=false&with_genres=${genreIDs.join(',')}&page=1&sort_by=popularity.desc`
     let response = await fetch(endpoint)
     return response.json()
 }
