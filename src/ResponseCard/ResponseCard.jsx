@@ -1,10 +1,15 @@
-export default function ResponseCard({option}) {
+export default function ResponseCard({option, selected, setSelected}) {
+    const responseCardClass = selected === option.title ? "reponse-card selected" : "reponse-card"
+
+    function handleClick() {
+        setSelected(option.title)
+    }
     return (
-        <div className='reponse-card'>
-            <div>{option.title}</div>
+        <button onClick={handleClick} className={responseCardClass}>
             <div className="img-container">
-                <img src={option.img} className='response-img'></img>
+                <img alt={option.title} src={option.img} className="response-img"></img>
             </div>
-        </div>
+            <div className="response-title">{option.title}</div>
+        </button>
     )
 }
