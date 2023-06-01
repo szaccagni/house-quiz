@@ -11,25 +11,21 @@ export default function QuizCard({setShowResult, setShowQuiz}) {
     
     const disabled = curQuestion === 0 ? true : false
 
-    function getNextQuestion(num) {
+    function handleBack() {
+        setCurQuestion(curQuestion-1)
+    }
+
+    function handleNext() {
+        setSelected('')
         if (curQuestion+1 < data.length) {
-            setCurQuestion(curQuestion+num)
+            setCurQuestion(curQuestion+1)
         } else {
             setShowResult(true)
             setShowQuiz(false)
             setCurQuestion(0)
         }
-        
     }
 
-    function handleBack() {
-        getNextQuestion(-1)
-    }
-
-    function handleClick() {
-        setSelected('')
-        getNextQuestion(1)
-    }
     return (
         <div className='quiz'>
             <div className="question-container"><div>{data[curQuestion].question}</div></div>
@@ -58,7 +54,7 @@ export default function QuizCard({setShowResult, setShowQuiz}) {
                         {selected !== '' &&
                         <Button 
                             id="next-btn"
-                            onClick={handleClick}
+                            onClick={handleNext}
                             variant="contained"
                         >
                             next
