@@ -10,7 +10,7 @@ export default function QuizCard({question, getNextQuestion}) {
     }
     return (
         <>
-            <div>{question.question}</div>
+            <div className="question-container"><div>{question.question}</div></div>
             <div className="response-container">
                 {question.response.map((option, idx) => (
                     <ResponseCard key={idx} option={option} selected={selected} setSelected={setSelected}/>
