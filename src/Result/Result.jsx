@@ -6,7 +6,7 @@ export default function Result({genres}) {
     useEffect(function() {
         async function getIds() {
             const ids = await questions.getMovies(genres)
-            // ids.forEach(id => movies.push(id))
+            console.log(ids)
         }    
         getIds()
     })
