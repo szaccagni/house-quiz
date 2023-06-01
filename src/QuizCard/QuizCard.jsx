@@ -25,7 +25,18 @@ export default function QuizCard({setShowResult, setShowQuiz}) {
             setShowResult(true)
             setShowQuiz(false)
             setCurQuestion(0)
+            getResponseTotals()
         }
+    }
+
+    function getResponseTotals() {
+        const frequencyMap = Object.values(responses).reduce((acc, value) => {
+            acc[value] = (acc[value] || 0) + 1 
+            return acc
+        }, {});
+        const mostFrequentValue = Object.keys(frequencyMap).reduce((a, b) => frequencyMap[a] > frequencyMap[b] ? a : b)
+        const genres = questions.getGenres(mostFrequentValue)
+        console.log(genres)
     }
 
     return (

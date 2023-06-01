@@ -1,36 +1,51 @@
+const GENRES = 
+    {
+        'A' : [{"id":27,"name":"Horror"}, {"id":80,"name":"Crime"}],
+    
+        'B' : [{"id":14,"name":"Fantasy"}, {"id":10749,"name":"Romance"}],
+    
+        'C' : [{"id":18,"name":"Drama"}, {"id":53,"name":"Thriller"}],      
+        
+        'D': [{"id":28,"name":"Action"}, {"id":9648,"name":"Mystery"}],
+        
+        'E': [{"id":36,"name":"History"}, {"id":99,"name":"Documentary"}],
+        
+        'F': [{"id":35,"name":"Comedy"}, {"id":16,"name":"Animation"} ]
+    }
+
 const QUESTIONS = [
     {
         question : 'pick a location',
         response : [
             {
+                rId: 'A',
                 img : 'https://www.travelandleisure.com/thmb/91pb8LbDAUwUN_11wATYjx5oF8Q=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/new-york-city-evening-NYCTG0221-52492d6ccab44f328a1c89f41ac02aea.jpg',
-                title : 'New York',
-                genres: [{"id":27,"name":"Horror"}, {"id":80,"name":"Crime"}]
+                title : 'New York'
             },
             {
+                rId: 'B',
                 img : 'https://images.pexels.com/photos/12160606/pexels-photo-12160606.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-                title : 'Paris',
-                genres: [{"id":14,"name":"Fantasy"}, {"id":10749,"name":"Romance"}]
+                title : 'Paris'
             },
             {
+                rId: 'C',
                 img : 'https://pyt-blogs.imgix.net/2020/08/eva-dang-EXdXLrZXS9Q-unsplash-1-scaled.jpg?auto=format&ixlib=php-3.3.0',
-                title : 'London',
-                genres: [{"id":18,"name":"Drama"}, {"id":53,"name":"Thriller"}]
+                title : 'London'
             },
             {
+                rId: 'D',
                 img : 'https://media.cntraveler.com/photos/60341fbad7bd3b27823c9db2/16:9/w_2560%2Cc_limit/Tokyo-2021-GettyImages-1208124099.jpg',
-                title : 'Tokyo',
-                genres: [{"id":28,"name":"Action"}, {"id":9648,"name":"Mystery"}]
+                title : 'Tokyo'
             },
             {
+                rId: 'E',
                 img : 'https://media.timeout.com/images/105211673/image.jpg',
-                title : 'Rome',
-                genres: [{"id":36,"name":"History"}, {"id":99,"name":"Documentary"}]
+                title : 'Rome'
             },
             {
+                rId: 'F',
                 img : 'https://deih43ym53wif.cloudfront.net/sydney-opera-australia-shutterstock_1094901527_b98ec1c857.jpeg',
-                title : 'Sydney',
-                genres: [{"id":35,"name":"Comedy"}, {"id":16,"name":"Animation"} ]
+                title : 'Sydney'
             },
         ]
     },
@@ -39,9 +54,9 @@ const QUESTIONS = [
         question : 'pick an exterior',
         response : [
             {
+                rId: 'A',
                 img : 'https://cdn.decoist.com/wp-content/uploads/2022/03/Central-courtyard-of-the-house-perseves-existing-tree-without-feeling-out-of-place-66621.jpg',
-                title : 'Brutalist',
-                genres: [{"id":27,"name":"Horror"}, {"id":80,"name":"Crime"}]
+                title : 'Brutalist'
             },
         ]
     },
@@ -50,9 +65,9 @@ const QUESTIONS = [
         question : 'pick a kitchen',
         response : [
             {
+                rId: 'A',
                 img : 'https://www.home-designing.com/wp-content/uploads/2017/02/kitchen-island-industrial-style-adjustable-lamps.jpg',
-                title : 'Industrial',
-                genres: [{"id":27,"name":"Horror"}, {"id":80,"name":"Crime"}]
+                title : 'Industrial'
             },
         ]
     },
@@ -61,9 +76,9 @@ const QUESTIONS = [
         question : 'pick a backyard',
         response : [
             {
+                rId: 'A',
                 img : 'https://yardzen.com/wp-content/uploads/9-10-1.png',
                 title : 'Stone',
-                genres: [{"id":27,"name":"Horror"}, {"id":80,"name":"Crime"}]
             },
         ]
     },
@@ -72,9 +87,9 @@ const QUESTIONS = [
         question : 'pick a some art',
         response : [
             {
+                rId: 'A',
                 img : 'https://mcasd.org/client-uploads/images/_mcasd_image_1_62x1_1200px_w/MCASD-LJ-1.jpg',
                 title : 'Modern',
-                genres: [{"id":27,"name":"Horror"}, {"id":80,"name":"Crime"}]
             },
         ]
     },
@@ -83,9 +98,9 @@ const QUESTIONS = [
         question : 'pick a front door',
         response : [
             {
+                rId: 'A',
                 img : 'https://secure.img1-cg.wfcdn.com/im/67583898/resize-h445%5Ecompr-r85/2386/238690965/Iron+Prehung+Front+Entry+Door.jpg',
                 title : 'Modern',
-                genres: [{"id":27,"name":"Horror"}, {"id":80,"name":"Crime"}]
             },
         ]
     },
@@ -94,9 +109,9 @@ const QUESTIONS = [
         question : 'pick your roommate',
         response : [
             {
+                rId: 'D',
                 img : 'https://post.bark.co/wp-content/uploads/2022/05/iStock-1223511966.jpg',
                 title : 'Dog',
-                genres: [{"id":28,"name":"Action"}, {"id":9648,"name":"Mystery"}]
             },
         ]
     },
@@ -105,9 +120,9 @@ const QUESTIONS = [
         question : 'pick an extra room',
         response : [
             {
+                rId: 'D',
                 img : 'https://www.finitesolutions.co.uk/wp-content/uploads/2019/03/Basement-Home-Theatre-Project-in-London.jpeg',
                 title : 'Home Theater',
-                genres: [{"id":28,"name":"Action"}, {"id":9648,"name":"Mystery"}]
             },
         ]
     },
@@ -115,18 +130,23 @@ const QUESTIONS = [
 ]
 
 module.exports = {
-    getData
+    getData,
+    getGenres
 }
 
 function getData() {
     return QUESTIONS
 }
 
+function getGenres(letter) {
+    return GENRES[letter]
+}
+
 const MOVIE_DB_KEY = '4d84b4bbf6cccea4ffd1544bc87220a1'
 
 // https://api.themoviedb.org/3/discover/movie?api_key=4d84b4bbf6cccea4ffd1544bc87220a1&with_genres=37
 
-const GENRES = 
+const MOVIE_DB_GENRES = 
     [
         {"id":28,"name":"Action"},
         {"id":12,"name":"Adventure"},

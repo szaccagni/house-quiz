@@ -1,11 +1,11 @@
 export default function ResponseCard({option, selected, setSelected, responses, setResponses, curQuestion}) {
-    const responseCardClass = selected === option.title ? "reponse-card selected" : "reponse-card"
+    const responseCardClass = selected === option.rId ? "reponse-card selected" : "reponse-card"
 
     function handleClick() {
         const newResponses = {...responses}
-        newResponses[curQuestion] = option.title
+        newResponses[curQuestion] = option.rId
         setResponses(newResponses)
-        setSelected(option.title)
+        setSelected(option.rId)
     }
     return (
         <button onClick={handleClick} className={responseCardClass}>
