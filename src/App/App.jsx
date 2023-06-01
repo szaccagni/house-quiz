@@ -30,7 +30,12 @@ export default function App() {
       {showResult &&
         <>
           <Result genres={genres}/>
-          <button onClick={resetQuiz}>start over</button>
+          <Button 
+            variant="contained"
+            onClick={resetQuiz}
+          >
+            Start Over
+          </Button>
         </>
       }
     </div>

@@ -3,6 +3,7 @@ import * as questions from '../Data/quiz-qustions'
 
 export default function Result({genres}) {
     const [movies, setMovies] = useState([])
+    
     useEffect(function() {
         async function getIds() {
             const ids = await questions.getMovies(genres)
