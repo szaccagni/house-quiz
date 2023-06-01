@@ -37,7 +37,7 @@ code {
 .quiz-title-container button {
   margin-top: 15px;
   padding: 30px;
-  border-radius: 25px;
+  /* border-radius: 25px; */
   font-family: 'arimo-regular';
   font-size: 25px;
   background-color: darkgreen;
@@ -58,19 +58,22 @@ code {
 .quiz {
   height: 100vh;
 }
-/* 
+
 .next-btn-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .next-btn-container button {
-  width: 40%;
-  margin: auto;
-  padding: 15px;
-  border-radius: 25px;
-} */
+  width: 30%;
+  background-color: darkgreen;
+}
+
+.next-btn-container button:hover {
+  background-color: green;
+}
 
 .question-container {
   margin: 0 45px;
