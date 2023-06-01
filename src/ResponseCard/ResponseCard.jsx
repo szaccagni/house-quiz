@@ -1,7 +1,10 @@
-export default function ResponseCard({option, selected, setSelected}) {
+export default function ResponseCard({option, selected, setSelected, responses, setResponses, curQuestion}) {
     const responseCardClass = selected === option.title ? "reponse-card selected" : "reponse-card"
 
     function handleClick() {
+        const newResponses = {...responses}
+        newResponses[curQuestion] = option.title
+        setResponses(newResponses)
         setSelected(option.title)
     }
     return (

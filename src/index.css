@@ -61,18 +61,22 @@ code {
 
 .next-btn-container {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   grid-column: 1 / span 3;
 }
 
-.next-btn-container button {
+#back-btn {
   width: 17%;
+}
+
+#next-btn {
+  width: 17%;
+  margin:0 10px;
   background-color: darkgreen;
 }
 
-.next-btn-container button:hover {
+#next-btn:hover {
   background-color: green;
 }
 

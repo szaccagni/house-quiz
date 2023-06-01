@@ -1,6 +1,6 @@
 import './App.css';
 import {useState} from 'react'
-import Quiz from '../Quiz/Quiz';
+import QuizCard from '../QuizCard/QuizCard'
 import Button from '@mui/material/Button';
 
 export default function App() {
@@ -24,7 +24,7 @@ export default function App() {
           >Start Quiz!</Button>
         </div>
       }
-      {showQuiz && <Quiz setShowResult={setShowResult} setShowQuiz={setShowQuiz}/>}
+      {showQuiz && <QuizCard setShowResult={setShowResult} setShowQuiz={setShowQuiz}/>}
       {showResult &&
         <>
           <div>result</div>
