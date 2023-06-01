@@ -31,6 +31,7 @@ export default function App() {
         <>
           <Result genres={genres}/>
           <Button 
+            id="reset-btn"
             variant="contained"
             onClick={resetQuiz}
           >
