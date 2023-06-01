@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './MovieRecommendations.css';
 
-const MovieRecommendations = () => {
+const MovieRecommendations = (props) => {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
@@ -28,9 +28,9 @@ const MovieRecommendations = () => {
 
   return (
     <div className="movie-recommendations">
-      <h1 className="title">Movie Recommendations</h1>
-      <ul className="movie-list">
-        {movies.map((movie, index) => (
+      {/* <h1 className="title">Movie Recommendations</h1> */}
+      {/* <ul className="movie-list"> */}
+        {/* {movies.map((movie, index) => (
           <li key={index} className="movie-item">
             <div className="thumbnail-container">
               <img src={movie.thumbnail} alt={`Thumbnail for ${movie.title}`} className="thumbnail" />
@@ -46,8 +46,22 @@ const MovieRecommendations = () => {
               </div>
             </div>
           </li>
-        ))}
-      </ul>
+        ))} */}
+      {/* </ul> */}
+      <div className="thumbnail-container">
+      <img src={props.imgPath} alt={`Thumbnail for ${props.title}`} className="thumbnail" />
+      </div>
+      <div className="movie-details">
+        <div>
+          <h3 className="movie-title">{props.title}</h3>
+          <p className="imdb-rating">IMDb Rating: {props.rating}</p>
+          {/* <p className="genres">Genres: {props.genres.join(', ')}</p> */}
+          {/* <a href={props.link} className="imdb-link" target="_blank" rel="noopener noreferrer">
+            View on IMDb
+          </a> */}
+          <p>Description: {props.description}</p>
+        </div>
+      </div>
     </div>
   );
 };
