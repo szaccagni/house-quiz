@@ -5,8 +5,7 @@ export default function Quiz() {
     const data = questions.getData()
     
     return (
-        <div>
-            <div>quiz</div>
+        <div className='quiz'>
             {data.map((question, idx) => (
                 <QuizCard key={idx} question={question}/>
             ))}

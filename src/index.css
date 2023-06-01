@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +14,37 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.quiz {
+  height: 100vh;
+}
+
+.response-container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 50% 50%;
+  grid-gap: 10px; 
+  padding: 45px;
+}
+
+.reponse-card {
+  padding: 5px;
+  overflow: hidden;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.response-img {
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
 }
