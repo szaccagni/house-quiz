@@ -13,6 +13,7 @@ export default function QuizCard({setShowResult, setShowQuiz}) {
 
     function handleBack() {
         setCurQuestion(curQuestion-1)
+        setSelected(responses[curQuestion-1])
     }
 
     function handleNext() {
