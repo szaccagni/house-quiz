@@ -15,10 +15,15 @@ export default function Result({genres}) {
 
     
     return (
-        <div className="result-container">
+        <div>
+            <h1 className="result-title">Here are some movies chosen for you!</h1>
+            <div className="result-container">
+            
             {movies.map((movie, idx) => (
                 <ResultCard key={idx} movie={movie} />
             ))}
         </div>
+        </div>
+        
     )
 }
