@@ -5,32 +5,32 @@ const QUESTIONS = [
             {
                 img : 'https://www.travelandleisure.com/thmb/91pb8LbDAUwUN_11wATYjx5oF8Q=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/new-york-city-evening-NYCTG0221-52492d6ccab44f328a1c89f41ac02aea.jpg',
                 title : 'New York',
-                genres: ['Horror', 'Crime']
+                genres: [{"id":27,"name":"Horror"}, {"id":80,"name":"Crime"}]
             },
             {
                 img : 'https://images.pexels.com/photos/12160606/pexels-photo-12160606.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
                 title : 'Paris',
-                genres: ['Romantic Comedy', 'Romance', 'Fantasy']
+                genres: [{"id":14,"name":"Fantasy"}, {"id":10749,"name":"Romance"}]
             },
             {
                 img : 'https://pyt-blogs.imgix.net/2020/08/eva-dang-EXdXLrZXS9Q-unsplash-1-scaled.jpg?auto=format&ixlib=php-3.3.0',
                 title : 'London',
-                genres: ['Drama', 'Thriller']
+                genres: [{"id":18,"name":"Drama"}, {"id":53,"name":"Thriller"}]
             },
             {
                 img : 'https://media.cntraveler.com/photos/60341fbad7bd3b27823c9db2/16:9/w_2560%2Cc_limit/Tokyo-2021-GettyImages-1208124099.jpg',
                 title : 'Tokyo',
-                genres: ['Action', 'Fantasy']
+                genres: [{"id":28,"name":"Action"}, {"id":9648,"name":"Mystery"}]
             },
             {
                 img : 'https://media.timeout.com/images/105211673/image.jpg',
                 title : 'Rome',
-                genres: ['History', 'Documentary']
+                genres: [{"id":36,"name":"History"}, {"id":99,"name":"Documentary"}]
             },
             {
-                img : 'https://media.timeout.com/images/105211673/image.jpg',
-                title : 'Rome',
-                genres: ['History', 'Documentary']
+                img : 'https://deih43ym53wif.cloudfront.net/sydney-opera-australia-shutterstock_1094901527_b98ec1c857.jpeg',
+                title : 'Sydney',
+                genres: [{"id":35,"name":"Comedy"}, {"id":16,"name":"Animation"} ]
             },
         ]
     },

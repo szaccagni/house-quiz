@@ -16,7 +16,7 @@ export default function App() {
     <div className="App">
       {!showQuiz && !showResult && 
         <div className='quiz-title-container'>
-          <div className="quiz-title">Build your dream house and we'll give <br></br> you 5 movies to watch this week!</div>
+          <div className="quiz-title">Build your dream house and we'll give you 5 movies to watch this week!</div>
           <Button 
             onClick={() => setShowQuiz(true)} 
             variant="contained"
