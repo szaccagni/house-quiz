@@ -84,6 +84,10 @@ code {
   margin-bottom: 25px;
 }
 
+#more-results {
+  margin-bottom: 15px;
+}
+
 .question-container {
   margin: 0 45px;
   background-color: bisque;
@@ -111,7 +115,6 @@ code {
 }
 
 .result-container {
-  height: 45%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -124,6 +127,7 @@ code {
 }
 
 .result-card {
+  width: 70%;
   padding: 5px;
 }
 

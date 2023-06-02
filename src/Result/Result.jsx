@@ -1,29 +1,41 @@
 import { useState, useEffect } from 'react'
-import * as questions from '../Data/quiz-qustions'
 import MovieRecommendations from "../Movies/MovieRecommendations"
+import Button from '@mui/material/Button';
 
-export default function Result({genres}) {
-    const [movies, setMovies] = useState([])
+export default function Result({genres, movies, getMovieData, pg, setPg}) {
+    const [recommendations, setRecommendations] = useState([])
+    const [start, setStart] = useState(0)
 
     useEffect(function() {
-        async function getIds() {
-            const ids = await questions.getMovies(genres)
-            setMovies(ids.results.slice(0,5))
-        }    
-        getIds()
-    })
+        const newMovies = movies.slice(start,start+5)
+        if(newMovies.length > 0) setRecommendations(newMovies)
+    }, [movies, start])
 
+    async function getMoreResults() {
+        if (start < 15) {
+            setStart(start+5)
+        } else {
+            setPg(pg+1)
+            await getMovieData(genres, pg+1)
+            setStart(0)
+        }
+    }
 
     return (
         <div>
-            <h1 className="result-title">Here are some movies chosen for you!</h1>
             <div className="result-container">
-            
-            {movies.map((movie, idx) => (
-                // <ResultCard key={idx} movie={movie} />
-                <MovieRecommendations key={idx} movie={movie} />
-            ))}
-        </div>
+                {recommendations.map((movie, idx) => (
+                    // <ResultCard key={idx} movie={movie} />
+                    <MovieRecommendations key={idx} movie={movie} />
+                ))}
+            </div>
+            <Button
+                id="more-results"
+                variant="contained"
+                onClick={getMoreResults}
+            >
+                Show Me More Options!
+            </Button>
         </div>
         
     )

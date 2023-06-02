@@ -1,12 +1,12 @@
 const GENRES = 
     {
-        'A' : [{"id":27,"name":"Horror"}, {"id":80,"name":"Crime"}],
+        'A' : [{"id":53,"name":"Thriller"}, {"id":80,"name":"Crime"}],
     
         'B' : [{"id":14,"name":"Fantasy"}, {"id":10749,"name":"Romance"}],
     
         'C' : [{"id":18,"name":"Drama"}, {"id":53,"name":"Thriller"}],      
         
-        'D': [{"id":28,"name":"Action"}, {"id":9648,"name":"Mystery"}],
+        'D': [{"id":28,"name":"Action"}, {"id":878,"name":"Science Fiction"}],
         
         'E': [{"id":36,"name":"History"}, {"id":99,"name":"Documentary"}],
         
@@ -143,9 +143,9 @@ function getGenres(letter) {
     return GENRES[letter]
 }
 
-async function getMovies(genres) {
+async function getMovies(genres, pg) {
     const genreIDs = genres.map(genre => genre.id)
-    let endpoint = `https://api.themoviedb.org/3/discover/movie?api_key=${MOVIE_DB_KEY}&include_adult=false&with_genres=${genreIDs.join(',')}&page=1&sort_by=popularity.desc`
+    let endpoint = `https://api.themoviedb.org/3/discover/movie?api_key=${MOVIE_DB_KEY}&include_adult=false&with_genres=${genreIDs.join(',')}&page=${pg}&sort_by=popularity.desc`
     let response = await fetch(endpoint)
     return response.json()
 }
