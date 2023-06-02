@@ -27,7 +27,8 @@ code {
 }
 
 .zero-height {
-  height: 0;
+  /* height: 0; */
+  display: none;
 }
 
 .quiz-title-container {

@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 export default function ResponseCard({option, selected, setSelected, responses, setResponses, curQuestion}) {
     // const [responseCardClass, setResponseCardClass] = useState( selected === option.rId ? "reponse-card selected" : "reponse-card" ) 
@@ -6,9 +6,9 @@ export default function ResponseCard({option, selected, setSelected, responses, 
     const [isLoading, setIsLoading] = useState(true);
     const responseCardClass = selected === option.rId ? "reponse-card selected" : "reponse-card"
 
-    // useEffect(function() {
-    //     setResponseCardClass(selected === option.rId ? "reponse-card selected" : "reponse-card")
-    // }, [selected])
+    useEffect(function() {
+        setImgClass('zero-height')
+    }, [option])
 
     // function ResponseCardClassLogic() {
     //     if (!isLoading) {
