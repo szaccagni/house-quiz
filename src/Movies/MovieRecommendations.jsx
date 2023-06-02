@@ -9,6 +9,10 @@ export default function MovieRecommendations({movie, setSimilar, getSimilarMovie
     setSimilar({id: movie.id, name: movie.original_title})
   }
 
+  const customStyle = {
+    fontWeight: 'bold',
+  };
+
   return (
     <div className="result-card">
       <div className="result-img-container">
@@ -19,8 +23,8 @@ export default function MovieRecommendations({movie, setSimilar, getSimilarMovie
           <div className="movie-details">
               <div>
                 <h3 className="movie-title">{movie.original_title}</h3>
-                <p className="imdb-rating">IMDb Rating: {movie.vote_average}</p>
-                <p>Description: {movie.overview}</p>
+                <p className="imdb-rating"><span style={customStyle}>IMDb Rating:</span> {movie.vote_average}</p>
+                <p><span style={customStyle}>Description: </span>{movie.overview}</p>
               </div>
               <Button onClick={handleClick}>view similar</Button>
           </div>
