@@ -88,6 +88,10 @@ code {
   margin-bottom: 15px;
 }
 
+#progress-bar {
+  margin: 0 45px;
+}
+
 .question-container {
   margin: 0 45px;
   background-color: bisque;

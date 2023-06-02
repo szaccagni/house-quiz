@@ -45,7 +45,7 @@ export default function QuizCard({ setShowResult, setShowQuiz, setGenres, getMov
     return (
         <div className='quiz'>
             <div className="question-container"><div>{data[curQuestion].question}</div></div>
-            <LinearProgress variant="determinate" value={progress} />
+            <LinearProgress variant="determinate" value={progress} id="progress-bar"/>
             <div className="response-container">
                 {data[curQuestion].response.map((option, idx) => (
                     <ResponseCard
