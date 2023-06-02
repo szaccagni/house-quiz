@@ -18,9 +18,19 @@ const QUESTIONS = [
         question : 'pick a location',
         response : [
             {
+                rId: 'F',
+                img : 'https://deih43ym53wif.cloudfront.net/sydney-opera-australia-shutterstock_1094901527_b98ec1c857.jpeg',
+                title : 'Sydney'
+            },
+            {
                 rId: 'A',
                 img : 'https://www.travelandleisure.com/thmb/91pb8LbDAUwUN_11wATYjx5oF8Q=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/new-york-city-evening-NYCTG0221-52492d6ccab44f328a1c89f41ac02aea.jpg',
                 title : 'New York'
+            },
+            {
+                rId: 'D',
+                img : 'https://media.cntraveler.com/photos/60341fbad7bd3b27823c9db2/16:9/w_2560%2Cc_limit/Tokyo-2021-GettyImages-1208124099.jpg',
+                title : 'Tokyo'
             },
             {
                 rId: 'B',
@@ -33,19 +43,9 @@ const QUESTIONS = [
                 title : 'London'
             },
             {
-                rId: 'D',
-                img : 'https://media.cntraveler.com/photos/60341fbad7bd3b27823c9db2/16:9/w_2560%2Cc_limit/Tokyo-2021-GettyImages-1208124099.jpg',
-                title : 'Tokyo'
-            },
-            {
                 rId: 'E',
                 img : 'https://media.timeout.com/images/105211673/image.jpg',
                 title : 'Rome'
-            },
-            {
-                rId: 'F',
-                img : 'https://deih43ym53wif.cloudfront.net/sydney-opera-australia-shutterstock_1094901527_b98ec1c857.jpeg',
-                title : 'Sydney'
             },
         ]
     },
@@ -54,14 +54,9 @@ const QUESTIONS = [
         question : 'pick an exterior',
         response : [
             {
-                rId: 'A',
-                img : 'https://cdn.decoist.com/wp-content/uploads/2022/03/Central-courtyard-of-the-house-perseves-existing-tree-without-feeling-out-of-place-66621.jpg',
-                title : 'Brutalist'
-            },
-            {
-                rId: 'B',
-                img: 'https://static.giggster.com/images/location/f2da1996-da80-4980-812e-bf8df269379d/d1feb2f2-4446-403b-9f51-54db4f2bb41d/full_hd_retina.jpeg',
-                title: 'Fairytale'
+                rId: 'E',
+                img: 'https://www.bhg.com/thmb/ZKUn3kHAJ2Zmisg4EIcHIzTbDJU=/1484x0/filters:no_upscale():strip_icc()/exterior-julia-miller-house-f122f192-bef24da932c74f88b13f88168556fa4c.jpg',
+                title: 'Colonial'
             },
             {
                 rId: 'C',
@@ -69,21 +64,25 @@ const QUESTIONS = [
                 title: 'Gothic'
             },
             {
-                rId: 'D',
-                img: 'https://media.istockphoto.com/id/1255070620/photo/modern-house-with-garden-and-solar-panels.jpg?s=612x612&w=0&k=20&c=-q8PVziNfBqKNb-6esW1ryiAKUTyFKox9F_BOaMO_KI=',
-                title: 'Futuristic'
-            },
-            {
-                rId: 'E',
-                img: 'https://www.bhg.com/thmb/ZKUn3kHAJ2Zmisg4EIcHIzTbDJU=/1484x0/filters:no_upscale():strip_icc()/exterior-julia-miller-house-f122f192-bef24da932c74f88b13f88168556fa4c.jpg',
-                title: 'Colonial'
+                rId: 'B',
+                img: 'https://static.giggster.com/images/location/f2da1996-da80-4980-812e-bf8df269379d/d1feb2f2-4446-403b-9f51-54db4f2bb41d/full_hd_retina.jpeg',
+                title: 'Fairytale'
             },
             {
                 rId: 'F',
                 img: 'https://www.theagencyre.com/blog/wp-content/uploads/2022/08/f6Yui33fTjyhCSTMqQ5P.jpg',
                 title: 'Quirky'
             },
-            
+            {
+                rId: 'D',
+                img: 'https://media.istockphoto.com/id/1255070620/photo/modern-house-with-garden-and-solar-panels.jpg?s=612x612&w=0&k=20&c=-q8PVziNfBqKNb-6esW1ryiAKUTyFKox9F_BOaMO_KI=',
+                title: 'Futuristic'
+            },
+            {
+                rId: 'A',
+                img : 'https://cdn.decoist.com/wp-content/uploads/2022/03/Central-courtyard-of-the-house-perseves-existing-tree-without-feeling-out-of-place-66621.jpg',
+                title : 'Brutalist'
+            },
         ]
     },
 
@@ -91,24 +90,9 @@ const QUESTIONS = [
         question : 'pick a kitchen',
         response : [
             {
-                rId: 'A',
-                img : 'https://www.home-designing.com/wp-content/uploads/2017/02/kitchen-island-industrial-style-adjustable-lamps.jpg',
-                title : 'Industrial'
-            },
-            {
                 rId: 'B',
                 img: 'https://cdn.homedit.com/wp-content/uploads/2022/10/Understanding-the-Cottagecore-Aesthetic.jpg',
                 title: 'Cottage'
-            },
-            {
-                rId: 'C',
-                img: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/black-kitchen-cabinets-hilliard-losaltos2-18-10-07-1579801635.jpg',
-                title: 'Black'
-            },
-            {
-                rId: 'D',
-                img: 'https://bestdesignideas.com/wp-content/uploads/2015/02/High-Tech-Kitchen-Smooth-decor-free-or-relief-free-facades-980x734.jpg',
-                title: 'High-tech'
             },
             {
                 rId: 'E',
@@ -116,9 +100,24 @@ const QUESTIONS = [
                 title: 'Rustic'
             },
             {
+                rId: 'A',
+                img : 'https://www.home-designing.com/wp-content/uploads/2017/02/kitchen-island-industrial-style-adjustable-lamps.jpg',
+                title : 'Industrial'
+            },
+            {
+                rId: 'C',
+                img: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/black-kitchen-cabinets-hilliard-losaltos2-18-10-07-1579801635.jpg',
+                title: 'Black'
+            },
+            {
                 rId: 'F',
                 img: 'https://cdn.shopify.com/s/files/1/0006/6558/3668/files/Colorful_Kitchen_OMGreen_GoldenHour_04.jpg?v=1658876399',
                 title: 'Bright'
+            },
+            {
+                rId: 'D',
+                img: 'https://bestdesignideas.com/wp-content/uploads/2015/02/High-Tech-Kitchen-Smooth-decor-free-or-relief-free-facades-980x734.jpg',
+                title: 'High-tech'
             },
         ]
     },
@@ -132,14 +131,19 @@ const QUESTIONS = [
                 title : 'Stone',
             },
             {
-                rId: 'B',
-                img: 'https://cdn.mos.cms.futurecdn.net/foqUJNnt54WwqaStXAGeP3-1200-80.jpg',
-                title: 'Romantic',
-            },
-            {
                 rId: 'C',
                 img: 'https://www.architectureartdesigns.com/wp-content/uploads/2015/02/16-Captivating-Modern-Landscape-Designs-For-A-Modern-Backyard-0-1280x720.jpg',
                 title: 'Modern',
+            },
+            {
+                rId: 'F',
+                img: 'https://media.cnn.com/api/v1/images/stellar/prod/230224150612-03-body-best-beaches-world-tripadvisor-2023-radhanagar-beach.jpg?c=original&q=w_1280,c_fill',
+                title: 'Beach',
+            },
+            {
+                rId: 'B',
+                img: 'https://cdn.mos.cms.futurecdn.net/foqUJNnt54WwqaStXAGeP3-1200-80.jpg',
+                title: 'Romantic',
             },
             {
                 rId: 'D',
@@ -151,11 +155,6 @@ const QUESTIONS = [
                 img: 'https://www.eyeofthedaygdc.com/wp-content/uploads/versailles-880359_1280.jpg',
                 title: 'Classic',
             },
-            {
-                rId: 'F',
-                img: 'https://media.cnn.com/api/v1/images/stellar/prod/230224150612-03-body-best-beaches-world-tripadvisor-2023-radhanagar-beach.jpg?c=original&q=w_1280,c_fill',
-                title: 'Beach',
-            },
         ]
     },
 
@@ -163,19 +162,14 @@ const QUESTIONS = [
         question : 'pick some art',
         response : [
             {
+                rId: 'E',
+                img: 'https://static01.nyt.com/images/2022/10/27/multimedia/27xp-donda-1-8c76/27xp-donda-1-8c76-videoSixteenByNine3000.jpg',
+                title: 'Historic',
+            },
+            {
                 rId: 'A',
                 img : 'https://mcasd.org/client-uploads/images/_mcasd_image_1_62x1_1200px_w/MCASD-LJ-1.jpg',
                 title : 'Modern',
-            },
-            {
-                rId: 'B',
-                img: 'https://upload.wikimedia.org/wikipedia/commons/4/4b/Reflections_of_Clouds_on_the_Water-Lily_Pond.jpg',
-                title: 'Dreamy',
-            },
-            {
-                rId: 'C',
-                img: 'https://d16kd6gzalkogb.cloudfront.net/magazine_images/Caravaggio-Saint-Jerome-Writing-Image-via-walksofitalycom.jpg',
-                title: 'Intense',
             },
             {
                 rId: 'D',
@@ -183,14 +177,19 @@ const QUESTIONS = [
                 title: 'Futuristic',
             },
             {
-                rId: 'E',
-                img: 'https://static01.nyt.com/images/2022/10/27/multimedia/27xp-donda-1-8c76/27xp-donda-1-8c76-videoSixteenByNine3000.jpg',
-                title: 'Historic',
+                rId: 'B',
+                img: 'https://upload.wikimedia.org/wikipedia/commons/4/4b/Reflections_of_Clouds_on_the_Water-Lily_Pond.jpg',
+                title: 'Dreamy',
             },
             {
                 rId: 'F',
                 img: 'https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRY605hoIjfwWqGhzoSl6_gQCqAYnH3bW88BGoOFwnIWImHvl7WEPJ36yfq7-_nrA6ob5X10QbQL9fqGtt_U74tS-oyNS_GgeDA-dmdDh8&usqp=CAE',
                 title: 'Playful',
+            },
+            {
+                rId: 'C',
+                img: 'https://d16kd6gzalkogb.cloudfront.net/magazine_images/Caravaggio-Saint-Jerome-Writing-Image-via-walksofitalycom.jpg',
+                title: 'Intense',
             },
         ]
     },
@@ -199,14 +198,14 @@ const QUESTIONS = [
         question : 'pick a front door',
         response : [
             {
+                rId: 'D',
+                img: 'https://www.europeancabinets.com/wp-content/uploads/2017/06/banner-front-door-_MG_7247.jpg',
+                title: 'Futuristic',
+            },
+            {
                 rId: 'A',
                 img : 'https://secure.img1-cg.wfcdn.com/im/67583898/resize-h445%5Ecompr-r85/2386/238690965/Iron+Prehung+Front+Entry+Door.jpg',
                 title : 'Modern',
-            },
-            {
-                rId: 'B',
-                img: 'https://www.thecottagejournal.com/wp-content/uploads/2020/08/Loi-Thai.jpg',
-                title: 'Cottage',
             },
             {
                 rId: 'C',
@@ -214,9 +213,9 @@ const QUESTIONS = [
                 title: 'Dramatic',
             },
             {
-                rId: 'D',
-                img: 'https://www.europeancabinets.com/wp-content/uploads/2017/06/banner-front-door-_MG_7247.jpg',
-                title: 'Futuristic',
+                rId: 'F',
+                img: 'https://thecraftsmanblog.com/wp-content/uploads/2013/04/Why-Does-My-Old-House-Have-Two-Front-Doors.jpg',
+                title: 'Retro',
             },
             {
                 rId: 'E',
@@ -224,12 +223,10 @@ const QUESTIONS = [
                 title: 'Traditional',
             },
             {
-                rId: 'F',
-                img: 'https://thecraftsmanblog.com/wp-content/uploads/2013/04/Why-Does-My-Old-House-Have-Two-Front-Doors.jpg',
-                title: 'Retro',
+                rId: 'B',
+                img: 'https://www.thecottagejournal.com/wp-content/uploads/2020/08/Loi-Thai.jpg',
+                title: 'Cottage',
             },
-            
-            
         ]
     },
 
@@ -237,14 +234,14 @@ const QUESTIONS = [
         question : 'pick your roommate',
         response : [
             {
-                rId: 'A',
-                img: 'https://www.rd.com/wp-content/uploads/2019/09/shutterstock_58825690-scaled.jpg',
-                title: 'K9 Dog',
-            },
-            {
                 rId: 'B',
                 img: 'https://worldanimalfoundation.org/wp-content/uploads/2023/02/history-of-sea-horse-review.jpg',
                 title: 'Seahorse',
+            },
+            {
+                rId: 'A',
+                img: 'https://www.rd.com/wp-content/uploads/2019/09/shutterstock_58825690-scaled.jpg',
+                title: 'K9 Dog',
             },
             {
                 rId: 'C',
@@ -252,14 +249,14 @@ const QUESTIONS = [
                 title: 'Snake',
             },
             {
-                rId: 'D',
-                img : 'https://post.bark.co/wp-content/uploads/2022/05/iStock-1223511966.jpg',
-                title : 'Dog',
-            },
-            {
                 rId: 'E',
                 img: 'https://images.saymedia-content.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cq_auto:eco%2Cw_1200/MTk2OTY2NzAwMDk5MzE1MzQw/pet-turtle-or-tortoise.png',
                 title: 'Tortoise',
+            },
+            {
+                rId: 'D',
+                img : 'https://post.bark.co/wp-content/uploads/2022/05/iStock-1223511966.jpg',
+                title : 'Dog',
             },
             {
                 rId: 'F',
@@ -273,19 +270,14 @@ const QUESTIONS = [
         question : 'pick an extra room',
         response : [
             {
-                rId: 'A',
-                img: 'https://cdn.mos.cms.futurecdn.net/hKX2Uqg2giQikXUekiPNaC.jpg',
-                title : 'Study',
-            },
-            {
                 rId: 'B',
                 img: 'https://media.houseandgarden.co.uk/photos/61894268f6eb732bf13e4668/4:3/w_3868,h_2901,c_limit/hgtuscannk.jpg',
                 title: 'Garden',
             },
             {
-                rId: 'C',
-                img: 'https://www.christiesrealestate.com/blog/wp-content/uploads/2019/11/Dining-Room.jpg',
-                title: 'Dining Room',
+                rId: 'A',
+                img: 'https://cdn.mos.cms.futurecdn.net/hKX2Uqg2giQikXUekiPNaC.jpg',
+                title : 'Study',
             },
             {
                 rId: 'D',
@@ -293,14 +285,19 @@ const QUESTIONS = [
                 title: 'Home Theater',
             },
             {
-                rId: 'E',
-                img: 'https://static01.nyt.com/images/2015/10/24/opinion/24manguel/24manguel-superJumbo.jpg',
-                title: 'Library',
+                rId: 'C',
+                img: 'https://www.christiesrealestate.com/blog/wp-content/uploads/2019/11/Dining-Room.jpg',
+                title: 'Dining Room',
             },
             {
                 rId: 'F',
                 img: 'https://ugami.com/wp-content/uploads/2022/02/gaming-room-11.jpg',
                 title: 'Gaming Room',
+            },
+            {
+                rId: 'E',
+                img: 'https://static01.nyt.com/images/2015/10/24/opinion/24manguel/24manguel-superJumbo.jpg',
+                title: 'Library',
             },
         ]
     },
