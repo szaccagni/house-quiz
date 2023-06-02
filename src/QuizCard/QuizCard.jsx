@@ -48,47 +48,42 @@ export default function QuizCard({ setShowResult, setShowQuiz, setGenres, getMov
     const progress = (curQuestion / data.length) * 100;
 
     return (
-        <>
-        {
-            question.response &&
-            <div className='quiz'>
-                <div className="question-container"><div>{question.question}</div></div>
-                <LinearProgress variant="determinate" value={progress} id="progress-bar"/>
-                <div className="response-container">
-                    {question.response.map((option, idx) => (
-                        <ResponseCard
-                            key={idx}
-                            option={option}
-                            selected={selected}
-                            setSelected={setSelected}
-                            responses={responses}
-                            setResponses={setResponses}
-                            curQuestion={curQuestion}
-                        />
-                    ))}
+        <div className='quiz'>
+            <div className="question-container"><div>{question.question}</div></div>
+            <LinearProgress variant="determinate" value={progress} id="progress-bar"/>
+            <div className="response-container">
+                {question.response.map((option, idx) => (
+                    <ResponseCard
+                        key={idx}
+                        option={option}
+                        selected={selected}
+                        setSelected={setSelected}
+                        responses={responses}
+                        setResponses={setResponses}
+                        curQuestion={curQuestion}
+                    />
+                ))}
 
-                    <div className="next-btn-container">
+                <div className="next-btn-container">
+                    <Button
+                        id="back-btn"
+                        variant="outlined"
+                        onClick={handleBack}
+                        disabled={disabled}
+                    >
+                        Back
+                    </Button>
+                    {selected !== '' &&
                         <Button
-                            id="back-btn"
-                            variant="outlined"
-                            onClick={handleBack}
-                            disabled={disabled}
+                            id="next-btn"
+                            onClick={handleNext}
+                            variant="contained"
                         >
-                            Back
-                        </Button>
-                        {selected !== '' &&
-                            <Button
-                                id="next-btn"
-                                onClick={handleNext}
-                                variant="contained"
-                            >
-                                next
-                            </Button>}
-                    </div>
+                            next
+                        </Button>}
                 </div>
             </div>
-        }
-        </>
-    )
+        </div>
+)
 
 }

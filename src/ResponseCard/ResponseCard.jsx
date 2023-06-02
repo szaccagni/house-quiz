@@ -1,5 +1,33 @@
+import { useState } from "react"
+
 export default function ResponseCard({option, selected, setSelected, responses, setResponses, curQuestion}) {
+    // const [responseCardClass, setResponseCardClass] = useState( selected === option.rId ? "reponse-card selected" : "reponse-card" ) 
+    const [imgClass, setImgClass] = useState('zero-height')
+    const [isLoading, setIsLoading] = useState(true);
     const responseCardClass = selected === option.rId ? "reponse-card selected" : "reponse-card"
+
+    // useEffect(function() {
+    //     setResponseCardClass(selected === option.rId ? "reponse-card selected" : "reponse-card")
+    // }, [selected])
+
+    // function ResponseCardClassLogic() {
+    //     if (!isLoading) {
+    //         return selected === option.rId ? "reponse-card selected" : "reponse-card"
+    //     } else {
+    //         return 'loading'
+    //     }
+    // }
+
+    function handleImageLoad() {
+        console.log('Image loaded!');
+        setIsLoading(false);
+        setImgClass('img-container')
+    };
+
+
+    function handleImageError() {
+        console.log('Image failed to load!');
+    };
 
     function handleClick() {
         const newResponses = {...responses}
@@ -8,10 +36,13 @@ export default function ResponseCard({option, selected, setSelected, responses, 
         setSelected(option.rId)
     }
     return (
+        <>
         <button onClick={handleClick} className={responseCardClass}>
-            <div className="img-container">
-                <img alt={option.title} src={option.img} className="response-img"></img>
+            <div className={imgClass}>
+                <img alt={option.title} src={option.img} className="response-img" onLoad={() => handleImageLoad()}  onError={handleImageError}></img>
             </div>
-        </button>
+            {isLoading && <div>{option.title} Image Loading...</div>}
+        </button> 
+        </>
     )
 }

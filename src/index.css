@@ -26,6 +26,10 @@ code {
     monospace;
 }
 
+.zero-height {
+  height: 0;
+}
+
 .quiz-title-container {
   position: relative;
   height: 100vh;

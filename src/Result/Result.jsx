@@ -44,7 +44,6 @@ export default function Result({genres, movies, getMovieData, pg, setPg, getSimi
             <>
                 <div className="result-container">
                     {recommendations.map((movie, idx) => (
-                        // <ResultCard key={idx} movie={movie} />
                         <MovieRecommendations key={idx} movie={movie} setSimilar={setSimilar} getSimilarMovieData={getSimilarMovieData}/>
                     ))}
                 </div>
