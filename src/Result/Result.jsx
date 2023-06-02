@@ -11,8 +11,13 @@ export default function Result({genres, movies, getMovieData, pg, setPg, getSimi
     })
 
     useEffect(function() {
-        const newMovies = movies.slice(start,start+5)
-        setRecommendations(newMovies)
+        if (movies) {
+            const newMovies = movies.slice(start,start+5)
+            setRecommendations(newMovies)
+        } else {
+            setRecommendations([])
+        }
+        
     }, [movies, start])
 
     async function getMoreResults() {
@@ -20,10 +25,8 @@ export default function Result({genres, movies, getMovieData, pg, setPg, getSimi
             setStart(start+5)
         } else {
             if (similar.id !== '') {
-                console.log('1')
                 await getMovieData(genres, pg+1)
             } else {
-                console.log('2')
                 await getSimilarMovieData(similar.id, pg+1)
             }
             setPg(pg+1)

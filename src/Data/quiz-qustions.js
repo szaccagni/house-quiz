@@ -314,7 +314,7 @@ export function getGenres(letter) {
 
 export async function getMovies(genres, pg) {
     const genreIDs = genres.map(genre => genre.id)
-    let endpoint = `https://api.themoviedb.org/3/discover/movie?api_key=${MOVIE_DB_KEY}&include_adult=false&with_genres=${genreIDs.join(',')}&page=${pg}&sort_by=popularity.desc`
+    let endpoint = `https://api.themoviedb.org/3/discover/movie?api_key=${MOVIE_DB_KEY}&with_original_language=en&include_adult=false&with_genres=${genreIDs.join(',')}&page=${pg}&sort_by=popularity.desc`
     let response = await fetch(endpoint)
     return response.json()
 }

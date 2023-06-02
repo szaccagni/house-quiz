@@ -26,9 +26,9 @@ export default function ResponseCard({option, selected, setSelected, responses, 
     };
 
 
-    function handleImageError() {
-        console.log('Image failed to load!');
-    };
+    // function handleImageError() {
+    //     console.log('Image failed to load!');
+    // };
 
     function handleClick() {
         const newResponses = {...responses}
@@ -40,7 +40,7 @@ export default function ResponseCard({option, selected, setSelected, responses, 
         <>
         <button onClick={handleClick} className={responseCardClass}>
             <div className={imgClass}>
-                <img alt={option.title} src={option.img} className="response-img" onLoad={() => handleImageLoad()}  onError={handleImageError}></img>
+                <img alt={option.title} src={option.img} className="response-img" onLoad={() => handleImageLoad()}></img>
             </div>
             {isLoading && <div>{option.title} Image Loading...</div>}
         </button> 

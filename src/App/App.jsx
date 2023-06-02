@@ -30,7 +30,6 @@ export default function App() {
   }
 
   async function getSimilarMovieData(similar, page) {
-    console.log(similar,pg)
     const data = await questions.getSimilar(similar, page)
     setMovies(data.results)
   }
