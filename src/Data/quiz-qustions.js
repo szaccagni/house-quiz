@@ -210,7 +210,7 @@ const QUESTIONS = [
             },
             {
                 rId: 'C',
-                img: 'https://st.hzcdn.com/simgs/pictures/entryways/between-the-oaks-jeffrey-doherty-designer-img~5351c7aa00fb1163_4-7954-1-efbc467.jpg',
+                img: 'https://i.etsystatic.com/21192821/r/il/4c33ad/3681338970/il_1588xN.3681338970_33ue.jpg',
                 title: 'Dramatic',
             },
             {
@@ -220,7 +220,7 @@ const QUESTIONS = [
             },
             {
                 rId: 'E',
-                img: 'https://i.etsystatic.com/21192821/r/il/fcddac/3683362690/il_1588xN.3683362690_a3yb.jpg',
+                img: 'https://as1.ftcdn.net/v2/jpg/01/35/17/88/1000_F_135178810_NXufAUCBnD6DNb7Hl3Vq8o6mWkZK0SgD.jpg',
                 title: 'Traditional',
             },
             {
