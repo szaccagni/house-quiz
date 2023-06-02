@@ -43,7 +43,7 @@ export default function App() {
             variant="contained"
             onClick={resetQuiz}
           >
-            Take the Quiz
+            Take the Quiz Again
           </Button>
         </>
       }
