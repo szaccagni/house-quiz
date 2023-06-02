@@ -132,7 +132,8 @@ const QUESTIONS = [
 module.exports = {
     getData,
     getGenres,
-    getMovies
+    getMovies,
+    getSimilar
 }
 
 function getData() {
@@ -146,6 +147,12 @@ function getGenres(letter) {
 async function getMovies(genres, pg) {
     const genreIDs = genres.map(genre => genre.id)
     let endpoint = `https://api.themoviedb.org/3/discover/movie?api_key=${MOVIE_DB_KEY}&include_adult=false&with_genres=${genreIDs.join(',')}&page=${pg}&sort_by=popularity.desc`
+    let response = await fetch(endpoint)
+    return response.json()
+}
+
+async function getSimilar(movieId, pg) {
+    let endpoint = `https://api.themoviedb.org/3/movie/${movieId}/similar?api_key=${MOVIE_DB_KEY}&language=en-US&page=${pg}`
     let response = await fetch(endpoint)
     return response.json()
 }

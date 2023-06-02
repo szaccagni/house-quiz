@@ -22,6 +22,12 @@ export default function App() {
     setMovies(data.results)
   }
 
+  async function getSimilarMovieData(similar, page) {
+    console.log(similar,pg)
+    const data = await questions.getSimilar(similar, page)
+    setMovies(data.results)
+  }
+
   return (
     <div className="App">
       {!showQuiz && !showResult && 
@@ -37,7 +43,7 @@ export default function App() {
       {showQuiz && <QuizCard setShowResult={setShowResult} setShowQuiz={setShowQuiz} setGenres={setGenres} getMovieData={getMovieData} pg={pg}/>}
       {showResult &&
         <>
-          <Result genres={genres} movies={movies} getMovieData={getMovieData} pg={pg} setPg={setPg}/>
+          <Result genres={genres} movies={movies} getMovieData={getMovieData} pg={pg} setPg={setPg} getSimilarMovieData={getSimilarMovieData}/>
           <Button 
             id="reset-btn"
             variant="contained"
