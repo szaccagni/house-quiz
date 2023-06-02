@@ -212,4 +212,12 @@ code {
     font-size: 20px;
   }
 
+  #next-btn {
+    width: 35%;
+  }
+
+  #back-btn {
+    width: 35%;
+  }
+
 }
