@@ -8,6 +8,7 @@ export default function ResponseCard({option, selected, setSelected, responses, 
 
     useEffect(function() {
         setImgClass('zero-height')
+        setIsLoading(true)
     }, [option])
 
     // function ResponseCardClassLogic() {
