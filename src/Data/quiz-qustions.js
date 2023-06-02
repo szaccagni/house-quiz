@@ -56,32 +56,32 @@ const QUESTIONS = [
             {
                 rId: 'E',
                 img: 'https://www.bhg.com/thmb/ZKUn3kHAJ2Zmisg4EIcHIzTbDJU=/1484x0/filters:no_upscale():strip_icc()/exterior-julia-miller-house-f122f192-bef24da932c74f88b13f88168556fa4c.jpg',
-                title: 'Colonial'
+                title: 'Colonial House'
             },
             {
                 rId: 'C',
                 img: 'https://www.redfin.com/blog/wp-content/uploads/2022/04/1314-Addison-St-12.jpg',
-                title: 'Gothic'
+                title: 'Gothic House'
             },
             {
                 rId: 'B',
                 img: 'https://static.giggster.com/images/location/f2da1996-da80-4980-812e-bf8df269379d/d1feb2f2-4446-403b-9f51-54db4f2bb41d/full_hd_retina.jpeg',
-                title: 'Fairytale'
+                title: 'Fairytale House'
             },
             {
                 rId: 'F',
                 img: 'https://www.theagencyre.com/blog/wp-content/uploads/2022/08/f6Yui33fTjyhCSTMqQ5P.jpg',
-                title: 'Quirky'
+                title: 'Quirky House'
             },
             {
                 rId: 'D',
                 img: 'https://media.istockphoto.com/id/1255070620/photo/modern-house-with-garden-and-solar-panels.jpg?s=612x612&w=0&k=20&c=-q8PVziNfBqKNb-6esW1ryiAKUTyFKox9F_BOaMO_KI=',
-                title: 'Futuristic'
+                title: 'Futuristic House'
             },
             {
                 rId: 'A',
                 img : 'https://cdn.decoist.com/wp-content/uploads/2022/03/Central-courtyard-of-the-house-perseves-existing-tree-without-feeling-out-of-place-66621.jpg',
-                title : 'Brutalist'
+                title : 'Brutalist House'
             },
         ]
     },
@@ -92,32 +92,32 @@ const QUESTIONS = [
             {
                 rId: 'B',
                 img: 'https://cdn.homedit.com/wp-content/uploads/2022/10/Understanding-the-Cottagecore-Aesthetic.jpg',
-                title: 'Cottage'
+                title: 'Cottage Kitchen'
             },
             {
                 rId: 'E',
-                img: 'https://hips.hearstapps.com/hmg-prod/images/rustickitchens3-1497449626.jpg',
-                title: 'Rustic'
+                img: 'https://hips.hearstapps.com/edc.h-cdn.co/assets/cm/15/05/54c90def90950_-_rustic-country-kitchens-01.jpg?resize=980:*',
+                title: 'Rustic Kitchen'
             },
             {
                 rId: 'A',
                 img : 'https://www.home-designing.com/wp-content/uploads/2017/02/kitchen-island-industrial-style-adjustable-lamps.jpg',
-                title : 'Industrial'
+                title : 'Industrial Kitchen'
             },
             {
                 rId: 'C',
                 img: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/black-kitchen-cabinets-hilliard-losaltos2-18-10-07-1579801635.jpg',
-                title: 'Black'
+                title: 'Black Kitchen'
             },
             {
                 rId: 'F',
                 img: 'https://cdn.shopify.com/s/files/1/0006/6558/3668/files/Colorful_Kitchen_OMGreen_GoldenHour_04.jpg?v=1658876399',
-                title: 'Bright'
+                title: 'Bright Kitchen'
             },
             {
                 rId: 'D',
                 img: 'https://bestdesignideas.com/wp-content/uploads/2015/02/High-Tech-Kitchen-Smooth-decor-free-or-relief-free-facades-980x734.jpg',
-                title: 'High-tech'
+                title: 'High-tech Kitchen'
             },
         ]
     },
@@ -128,32 +128,32 @@ const QUESTIONS = [
             {
                 rId: 'A',
                 img: 'https://yardzen.com/wp-content/uploads/9-10-1.png',
-                title : 'Stone',
+                title : 'Stone Backyard',
             },
             {
                 rId: 'C',
                 img: 'https://www.architectureartdesigns.com/wp-content/uploads/2015/02/16-Captivating-Modern-Landscape-Designs-For-A-Modern-Backyard-0-1280x720.jpg',
-                title: 'Modern',
+                title: 'Modern Backyard',
             },
             {
                 rId: 'F',
                 img: 'https://media.cnn.com/api/v1/images/stellar/prod/230224150612-03-body-best-beaches-world-tripadvisor-2023-radhanagar-beach.jpg?c=original&q=w_1280,c_fill',
-                title: 'Beach',
+                title: 'Beach Backyard',
             },
             {
                 rId: 'B',
                 img: 'https://cdn.mos.cms.futurecdn.net/foqUJNnt54WwqaStXAGeP3-1200-80.jpg',
-                title: 'Romantic',
+                title: 'Romantic Backyard',
             },
             {
                 rId: 'D',
                 img: 'https://arc-anglerfish-arc2-prod-gmg.s3.amazonaws.com/public/VFKOL4I2PNBEXBCDGINXBGKJOQ.jpg',
-                title: 'JungleGym',
+                title: 'JungleGym Backyard',
             },
             {
                 rId: 'E',
                 img: 'https://www.eyeofthedaygdc.com/wp-content/uploads/versailles-880359_1280.jpg',
-                title: 'Classic',
+                title: 'Classic Backyard',
             },
         ]
     },
@@ -164,32 +164,32 @@ const QUESTIONS = [
             {
                 rId: 'E',
                 img: 'https://static01.nyt.com/images/2022/10/27/multimedia/27xp-donda-1-8c76/27xp-donda-1-8c76-videoSixteenByNine3000.jpg',
-                title: 'Historic',
+                title: 'Historic Art',
             },
             {
                 rId: 'A',
                 img : 'https://mcasd.org/client-uploads/images/_mcasd_image_1_62x1_1200px_w/MCASD-LJ-1.jpg',
-                title : 'Modern',
+                title : 'Modern Art',
             },
             {
                 rId: 'D',
                 img: 'https://img.artpal.com/572072/36-23-2-5-20-20-37m.jpg',
-                title: 'Futuristic',
+                title: 'Futuristic Art',
             },
             {
                 rId: 'B',
                 img: 'https://upload.wikimedia.org/wikipedia/commons/4/4b/Reflections_of_Clouds_on_the_Water-Lily_Pond.jpg',
-                title: 'Dreamy',
+                title: 'Dreamy Art',
             },
             {
                 rId: 'F',
                 img: 'https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRY605hoIjfwWqGhzoSl6_gQCqAYnH3bW88BGoOFwnIWImHvl7WEPJ36yfq7-_nrA6ob5X10QbQL9fqGtt_U74tS-oyNS_GgeDA-dmdDh8&usqp=CAE',
-                title: 'Playful',
+                title: 'Playful Art',
             },
             {
                 rId: 'C',
                 img: 'https://d16kd6gzalkogb.cloudfront.net/magazine_images/Caravaggio-Saint-Jerome-Writing-Image-via-walksofitalycom.jpg',
-                title: 'Intense',
+                title: 'Intense Art',
             },
         ]
     },
@@ -200,32 +200,32 @@ const QUESTIONS = [
             {
                 rId: 'D',
                 img: 'https://www.europeancabinets.com/wp-content/uploads/2017/06/banner-front-door-_MG_7247.jpg',
-                title: 'Futuristic',
+                title: 'Futuristic Front Door',
             },
             {
                 rId: 'A',
                 img : 'https://secure.img1-cg.wfcdn.com/im/67583898/resize-h445%5Ecompr-r85/2386/238690965/Iron+Prehung+Front+Entry+Door.jpg',
-                title : 'Modern',
+                title : 'Modern Front Door',
             },
             {
                 rId: 'C',
                 img: 'https://i.etsystatic.com/21192821/r/il/4c33ad/3681338970/il_1588xN.3681338970_33ue.jpg',
-                title: 'Dramatic',
+                title: 'Dramatic Front Door',
             },
             {
                 rId: 'F',
                 img: 'https://thecraftsmanblog.com/wp-content/uploads/2013/04/Why-Does-My-Old-House-Have-Two-Front-Doors.jpg',
-                title: 'Retro',
+                title: 'Retro Front Door',
             },
             {
                 rId: 'E',
                 img: 'https://as1.ftcdn.net/v2/jpg/01/35/17/88/1000_F_135178810_NXufAUCBnD6DNb7Hl3Vq8o6mWkZK0SgD.jpg',
-                title: 'Traditional',
+                title: 'Traditional Front Door',
             },
             {
                 rId: 'B',
                 img: 'https://www.thecottagejournal.com/wp-content/uploads/2020/08/Loi-Thai.jpg',
-                title: 'Cottage',
+                title: 'Cottage Front Door',
             },
         ]
     },
@@ -240,8 +240,8 @@ const QUESTIONS = [
             },
             {
                 rId: 'A',
-                img: 'https://www.rd.com/wp-content/uploads/2019/09/shutterstock_58825690-scaled.jpg',
-                title: 'K9 Dog',
+                img: 'https://post.bark.co/wp-content/uploads/2022/05/iStock-1223511966.jpg',
+                title: 'Doberman',
             },
             {
                 rId: 'C',
@@ -255,8 +255,8 @@ const QUESTIONS = [
             },
             {
                 rId: 'D',
-                img : 'https://post.bark.co/wp-content/uploads/2022/05/iStock-1223511966.jpg',
-                title : 'Dog',
+                img : 'https://www.blm.gov/sites/blm.gov/files/wildhorse_landingpage_education.jpg',
+                title : 'Horse',
             },
             {
                 rId: 'F',
@@ -276,7 +276,7 @@ const QUESTIONS = [
             },
             {
                 rId: 'A',
-                img: 'https://cdn.mos.cms.futurecdn.net/hKX2Uqg2giQikXUekiPNaC.jpg',
+                img: 'https://www.decorilla.com/online-decorating/wp-content/uploads/2022/10/Masculine-basement-home-office.jpeg',
                 title : 'Study',
             },
             {
