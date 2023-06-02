@@ -60,7 +60,7 @@ const QUESTIONS = [
             },
             {
                 rId: 'B',
-                img: 'https://images.unsplash.com/photo-1485962927012-fc4fd446a24d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1132&q=80',
+                img: 'https://static.giggster.com/images/location/f2da1996-da80-4980-812e-bf8df269379d/d1feb2f2-4446-403b-9f51-54db4f2bb41d/full_hd_retina.jpeg',
                 title: 'Fairytale'
             },
             {
@@ -75,12 +75,12 @@ const QUESTIONS = [
             },
             {
                 rId: 'E',
-                img: 'https://historicmassachusetts.files.wordpress.com/2020/11/john-ward-house-salem.jpg?w=718',
+                img: 'https://www.bhg.com/thmb/ZKUn3kHAJ2Zmisg4EIcHIzTbDJU=/1484x0/filters:no_upscale():strip_icc()/exterior-julia-miller-house-f122f192-bef24da932c74f88b13f88168556fa4c.jpg',
                 title: 'Colonial'
             },
             {
                 rId: 'F',
-                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScqabf-QTsN-3VFsIzGU4W64pL9bDSZeMAhA&usqp=CAU',
+                img: 'https://www.theagencyre.com/blog/wp-content/uploads/2022/08/f6Yui33fTjyhCSTMqQ5P.jpg',
                 title: 'Quirky'
             },
             
@@ -97,12 +97,12 @@ const QUESTIONS = [
             },
             {
                 rId: 'B',
-                img: 'https://storage.googleapis.com/gen-atmedia/3/2014/06/e0804f76591843a7ea9ed1a3516b88dbd29a2f4c.jpeg',
-                title: 'Pastel'
+                img: 'https://cdn.homedit.com/wp-content/uploads/2022/10/Understanding-the-Cottagecore-Aesthetic.jpg',
+                title: 'Cottage'
             },
             {
                 rId: 'C',
-                img: 'https://images.dwell.com/photos-6504047573267292160/6504061669781700608-large/kitchen.jpg',
+                img: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/black-kitchen-cabinets-hilliard-losaltos2-18-10-07-1579801635.jpg',
                 title: 'Black'
             },
             {
@@ -117,7 +117,7 @@ const QUESTIONS = [
             },
             {
                 rId: 'F',
-                img: 'https://cdn.onekindesign.com/wp-content/uploads/2013/04/Colorful-Kitchen-01-1-Kindesign.jpg',
+                img: 'https://cdn.shopify.com/s/files/1/0006/6558/3668/files/Colorful_Kitchen_OMGreen_GoldenHour_04.jpg?v=1658876399',
                 title: 'Bright'
             },
         ]
@@ -128,23 +128,23 @@ const QUESTIONS = [
         response : [
             {
                 rId: 'A',
-                img: 'https://st.hzcdn.com/simgs/pictures/landscapes/outside-landscape-group-outside-landscape-group-img~674163e9001c3472_4-0863-1-2b1d76d.jpg',
+                img: 'https://yardzen.com/wp-content/uploads/9-10-1.png',
                 title : 'Stone',
             },
             {
                 rId: 'B',
-                img: 'https://3.bp.blogspot.com/-_2yKDRrfXFg/T_bBNHRV-FI/AAAAAAAAt6M/1iVVed4Xnjk/s1600/IMG_6298.JPG',
+                img: 'https://cdn.mos.cms.futurecdn.net/foqUJNnt54WwqaStXAGeP3-1200-80.jpg',
                 title: 'Romantic',
             },
             {
                 rId: 'C',
-                img: 'https://www.thespruce.com/thmb/mB7SATStPvYfLyW_7Ae04HzXW3U=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/248416467_633001891024435_3035653121947143324_n-7c07e4e532534bd78602501ec1a9215c.jpg',
-                title: 'Minimal',
+                img: 'https://www.architectureartdesigns.com/wp-content/uploads/2015/02/16-Captivating-Modern-Landscape-Designs-For-A-Modern-Backyard-0-1280x720.jpg',
+                title: 'Modern',
             },
             {
                 rId: 'D',
-                img: 'https://hgtvhome.sndimg.com/content/dam/images/hgtv/fullset/2015/3/26/1/SSS-Outdoor-Entertaining-Cinebox-Backyard-Theater.jpg.rend.hgtvcom.616.462.suffix/1427420066321.jpeg',
-                title: 'Projector',
+                img: 'https://arc-anglerfish-arc2-prod-gmg.s3.amazonaws.com/public/VFKOL4I2PNBEXBCDGINXBGKJOQ.jpg',
+                title: 'JungleGym',
             },
             {
                 rId: 'E',
@@ -153,8 +153,8 @@ const QUESTIONS = [
             },
             {
                 rId: 'F',
-                img: 'https://www.bhg.com/thmb/YYkWP3y3Q_uCYzLomqc1FEizWUg=/1280x0/filters:no_upscale():strip_icc()/back-yard-patio-with-hot-tub-in-pergola-912cd91a-234502a6ba744d818f3004c1950eca0f.jpg',
-                title: 'Colorful',
+                img: 'https://media.cnn.com/api/v1/images/stellar/prod/230224150612-03-body-best-beaches-world-tripadvisor-2023-radhanagar-beach.jpg?c=original&q=w_1280,c_fill',
+                title: 'Beach',
             },
         ]
     },
@@ -169,7 +169,7 @@ const QUESTIONS = [
             },
             {
                 rId: 'B',
-                img: 'https://st2.depositphotos.com/4288515/44016/i/1600/depositphotos_440165164-stock-photo-romantic-painting-illustration-fantasy-art.jpg',
+                img: 'https://upload.wikimedia.org/wikipedia/commons/4/4b/Reflections_of_Clouds_on_the_Water-Lily_Pond.jpg',
                 title: 'Dreamy',
             },
             {
@@ -179,17 +179,17 @@ const QUESTIONS = [
             },
             {
                 rId: 'D',
-                img: 'https://images.squarespace-cdn.com/content/v1/58614e2ae6f2e152e7568f2c/1484580453026-HDE5ELRPNRSWXBM13WL8/Scout.jpg?format=2500w',
+                img: 'https://img.artpal.com/572072/36-23-2-5-20-20-37m.jpg',
                 title: 'Futuristic',
             },
             {
                 rId: 'E',
-                img: 'https://www.artandobject.com/sites/default/files/styles/gallery_item/public/starrynight-edited.jpg?itok=gGlg6L6J',
-                title: 'Starry Nights',
+                img: 'https://static01.nyt.com/images/2022/10/27/multimedia/27xp-donda-1-8c76/27xp-donda-1-8c76-videoSixteenByNine3000.jpg',
+                title: 'Historic',
             },
             {
                 rId: 'F',
-                img: 'https://helios-i.mashable.com/imagery/articles/01XY6bHOPzuAM1ygO9clBPV/hero-image.fill.size_1248x702.v1623373740.jpg',
+                img: 'https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRY605hoIjfwWqGhzoSl6_gQCqAYnH3bW88BGoOFwnIWImHvl7WEPJ36yfq7-_nrA6ob5X10QbQL9fqGtt_U74tS-oyNS_GgeDA-dmdDh8&usqp=CAE',
                 title: 'Playful',
             },
         ]
@@ -205,28 +205,28 @@ const QUESTIONS = [
             },
             {
                 rId: 'B',
-                img: 'https://blog.countrydoor.com/wp-content/uploads/sites/8/2019/08/Romantic-Front-Door-with-Basket.jpg',
-                title: 'Welcoming',
+                img: 'https://www.thecottagejournal.com/wp-content/uploads/2020/08/Loi-Thai.jpg',
+                title: 'Cottage',
             },
             {
                 rId: 'C',
-                img: 'https://www.thompsoncreek.com/wp-content/uploads/2021/07/front-door-black-563x409.jpg',
-                title: 'Dark',
+                img: 'https://st.hzcdn.com/simgs/pictures/entryways/between-the-oaks-jeffrey-doherty-designer-img~5351c7aa00fb1163_4-7954-1-efbc467.jpg',
+                title: 'Dramatic',
             },
             {
                 rId: 'D',
-                img: 'https://abeautifulspace.co.uk/wp-content/uploads/2019/03/house-front-doors-1600x1000.jpg',
+                img: 'https://www.europeancabinets.com/wp-content/uploads/2017/06/banner-front-door-_MG_7247.jpg',
                 title: 'Futuristic',
             },
             {
                 rId: 'E',
-                img: 'https://hullworks.com/wp-content/uploads/2021/04/know-your-doors-paneled-doors-english-diamond-panel-door1.jpg',
+                img: 'https://i.etsystatic.com/21192821/r/il/fcddac/3683362690/il_1588xN.3683362690_a3yb.jpg',
                 title: 'Traditional',
             },
             {
                 rId: 'F',
-                img: 'https://hips.hearstapps.com/hmg-prod/images/front-door-colors-hbx090117buzz01-2-1601326524.jpg?crop=1.00xw:0.335xh;0,0.263xh&resize=1200:*',
-                title: 'Vibrant',
+                img: 'https://thecraftsmanblog.com/wp-content/uploads/2013/04/Why-Does-My-Old-House-Have-Two-Front-Doors.jpg',
+                title: 'Retro',
             },
             
             
@@ -274,17 +274,17 @@ const QUESTIONS = [
         response : [
             {
                 rId: 'A',
-                img: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixid=Mnw3MzE3NHwwfDF8c2VhcmNofDJ8fGxpYnJhcnl8ZW58MHx8fHwxNjQ3MjM4ODAy&ixlib=rb-1.2.1&fit=crop&h=230&w=320&crop=edges',
-                title : 'Library',
+                img: 'https://cdn.mos.cms.futurecdn.net/hKX2Uqg2giQikXUekiPNaC.jpg',
+                title : 'Study',
             },
             {
                 rId: 'B',
-                img: 'https://images.unsplash.com/photo-1596481768453-8befafc2d7ae?ixid=Mnw3MzE3NHwwfDF8c2VhcmNofDF8fGJhY2t5YXJkJTIwZ2FyZGVufGVufDB8fHx8MTY0NzIzODU2Mw&ixlib=rb-1.2.1&fit=crop&h=230&w=320&crop=edges',
+                img: 'https://media.houseandgarden.co.uk/photos/61894268f6eb732bf13e4668/4:3/w_3868,h_2901,c_limit/hgtuscannk.jpg',
                 title: 'Garden',
             },
             {
                 rId: 'C',
-                img: 'https://www.home-designing.com/wp-content/uploads/2022/05/formal-dining-room-inspiration.jpg',
+                img: 'https://www.christiesrealestate.com/blog/wp-content/uploads/2019/11/Dining-Room.jpg',
                 title: 'Dining Room',
             },
             {
@@ -294,12 +294,12 @@ const QUESTIONS = [
             },
             {
                 rId: 'E',
-                img: 'https://images.unsplash.com/photo-1616315168316-61d6e5f16ead?ixid=Mnw3MzE3NHwwfDF8c2VhcmNofDF8fGFudGlxdWV8ZW58MHx8fHwxNjQ3MjM4NjIz&ixlib=rb-1.2.1&fit=crop&h=230&w=320&crop=edges',
-                title: 'Study Room',
+                img: 'https://static01.nyt.com/images/2015/10/24/opinion/24manguel/24manguel-superJumbo.jpg',
+                title: 'Library',
             },
             {
                 rId: 'F',
-                img: 'https://images.unsplash.com/photo-1616588589676-62b3bd4ff6d2?ixid=Mnw3MzE3NHwwfDF8c2VhcmNofDJ8fGdhbWluZyUyMHJvb218ZW58MHx8fHwxNjQ3MjM4Njg3&ixlib=rb-1.2.1&fit=crop&h=230&w=320&crop=edges',
+                img: 'https://ugami.com/wp-content/uploads/2022/02/gaming-room-11.jpg',
                 title: 'Gaming Room',
             },
         ]
