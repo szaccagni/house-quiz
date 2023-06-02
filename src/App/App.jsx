@@ -6,15 +6,22 @@ import Result from '../Result/Result';
 import * as questions from '../Data/quiz-qustions'
 
 export default function App() {
+  const [appClass, setAppClass] = useState('App Home')
   const [showQuiz, setShowQuiz] = useState(false)
   const [showResult, setShowResult] = useState(false)
   const [genres, setGenres] = useState({})
   const [movies, setMovies] = useState([])
   const [pg, setPg] = useState(1)
 
+  function StartQuiz() {
+    setShowQuiz(true)
+    setAppClass('App')
+  }
+
   function resetQuiz() {
     setShowQuiz(false)
     setShowResult(false)
+    setAppClass('App Home')
   }
 
   async function getMovieData(genreData, page) {
@@ -29,12 +36,12 @@ export default function App() {
   }
 
   return (
-    <div className="App">
+    <div className={appClass}>
       {!showQuiz && !showResult && 
         <div className='quiz-title-container'>
           <div className="quiz-title">Build your dream house and we'll give you 5 movies to watch this week!</div>
           <Button 
-            onClick={() => setShowQuiz(true)} 
+            onClick={StartQuiz} 
             variant="contained"
             // className="quiz-title-btn"
           >Start Quiz!</Button>

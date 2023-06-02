@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-.App::before {
+.Home::before {
   content: "";
   background-image: url('https://assets-mobilebaymag-com.s3.amazonaws.com/uploads/2018/07/Backyard-movie.jpg');
   background-size: cover;
