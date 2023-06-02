@@ -27,6 +27,7 @@ code {
 }
 
 .quiz-title-container {
+  position: relative;
   height: 100vh;
   display: flex;
   flex-direction: column;
