@@ -56,7 +56,7 @@ export default function Result({genres, movies, getMovieData, pg, setPg, getSimi
                         variant="contained"
                         onClick={getMoreResults}
                     >
-                        Show Me More Options {similar.name && <span>&nbsp;SIMILAR to {similar.name}&nbsp;</span>} !
+                        Show Me More Options {similar.name && <>SIMILAR to {similar.name}</>} !
                     </Button>
                 </div>
                 {similar.name &&   
