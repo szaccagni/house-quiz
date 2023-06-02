@@ -10,27 +10,22 @@ export default function QuizCard({ setShowResult, setShowQuiz, setGenres, getMov
     const [responses, setResponses] = useState({})
     const [selected, setSelected] = useState('')
     const [question, setQuestion] = useState(data[curQuestion])
-    const [loading, setLoading] = useState(false)
 
     const disabled = curQuestion === 0 ? true : false
 
     function handleBack() {
         setCurQuestion(curQuestion - 1)
         setSelected(responses[curQuestion - 1])
-        setLoading(true);
         setQuestion('')
         setQuestion(data[curQuestion - 1])
-        setLoading(false);
     }
 
     function handleNext() {
         if (curQuestion + 1 < data.length) {
             setCurQuestion(curQuestion + 1)
             setQuestion('')
-            setLoading(true);
             setQuestion(data[curQuestion + 1])
             responses[curQuestion + 1] ? setSelected(responses[curQuestion + 1]) : setSelected('')
-            setLoading(false);
         } else {
             setSelected('')
             setShowResult(true)
@@ -54,7 +49,6 @@ export default function QuizCard({ setShowResult, setShowQuiz, setGenres, getMov
 
     return (
         <>
-
             <div className='quiz'>
                 <div className="question-container"><div>{question.question}</div></div>
                 <LinearProgress variant="determinate" value={progress} id="progress-bar"/>
