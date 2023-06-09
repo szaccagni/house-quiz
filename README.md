@@ -15,6 +15,6 @@ Answer fun questions and get 5 movies with an option to similar to a specific mo
 * Node.js
 * TMDb API ( [documentation](https://developer.themoviedb.org/docs) )
 
-## Technologies
+## Next Steps
 * more robust logic for movie suggestions
 * potentially integrating some AI technology 
